@@ -11,7 +11,9 @@ const App = () => {
   useEffect(() => {
     const fetchFiles = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/files");
+        const response = await axios.get(
+          "https://seopage1-part3-backend.onrender.com/api/files"
+        );
         setFiles(response.data.data);
       } catch (error) {
         console.log(error);
