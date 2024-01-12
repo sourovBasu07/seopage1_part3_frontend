@@ -24,7 +24,7 @@ const UploadFilesModal = ({
       files.forEach((file) => formData.append("files", file));
 
       const response = await axios.post(
-        "http://localhost:5000/api/upload",
+        "https://seopage1-part3-backend.onrender.com/api/upload",
         formData,
         {
           headers: {
